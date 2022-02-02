@@ -10,4 +10,3 @@ cp -fr ./boot/overlays/* /boot/overlays
 cd /boot/overlays
 dtc -I dts -O dtb -o goodix_z2.dtbo goodix_z2.dts
 
-reboot
