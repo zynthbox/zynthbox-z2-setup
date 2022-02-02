@@ -31,7 +31,7 @@ export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p
 
 #Display Config
 export DISPLAY_NAME="Z2 Display"
-export DISPLAY_CONFIG="hdmi_force_hotplug:0=0\nhdmi_force_hotplug:1=1\nhdmi_drive:1=1\nhdmi_group:1=2\nhdmi_mode:1=87\nhdmi_cvt:1 1024 600 60 6 0 0 0\n#config_hdmi_boost:1=4\ndisplay_rotate=2\ndtoverlay=goodix_z2"
+export DISPLAY_CONFIG="hdmi_force_hotplug:0=0\nhdmi_force_hotplug:1=1\nhdmi_drive:1=1\nhdmi_group:1=2\nhdmi_mode:1=87\nhdmi_cvt:1 1024 600 60 6 0 0 0\n#config_hdmi_boost:1=4\ndisplay_rotate=0\ndtoverlay=goodix_z2"
 export DISPLAY_WIDTH="1024"
 export DISPLAY_HEIGHT="600"
 export FRAMEBUFFER="/dev/fb0"
@@ -256,18 +256,6 @@ export ZYNTHIAN_WIRING_CUSTOM_SWITCH_30__UI_LONG=""
 # MIDI system configuration
 export ZYNTHIAN_SCRIPT_MIDI_PROFILE="/zynthian/config/midi-profiles/default.sh"
 
-# Zynthian UI Config
-export ZYNTHIAN_UI_COLOR_BG="#000000"
-export ZYNTHIAN_UI_COLOR_TX="#ffffff"
-export ZYNTHIAN_UI_COLOR_ON="#ff0000"
-export ZYNTHIAN_UI_COLOR_PANEL_BG="#3a424d"
-export ZYNTHIAN_UI_FONT_FAMILY="Audiowide"
-export ZYNTHIAN_UI_FONT_SIZE="18"
-export ZYNTHIAN_UI_ENABLE_CURSOR="0"
-export ZYNTHIAN_UI_TOUCH_WIDGETS="0"
-export ZYNTHIAN_UI_RESTORE_LAST_STATE="1"
-export ZYNTHIAN_UI_SNAPSHOT_MIXER_SETTINGS="0"
-export ZYNTHIAN_UI_SWITCH_BOLD_MS="300"
-export ZYNTHIAN_UI_SWITCH_LONG_MS="2000"
+
 
 
