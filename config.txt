@@ -109,6 +109,7 @@ hdmi_mode:1=87
 hdmi_cvt:1 1024 600 60 6 0 0 0
 display_rotate=2
 #config_hdmi_boost:1=4
+dtoverlay=vc4-fkms-v3d
 
 # Touch surface: Goodix GT911
 # dtc -I dts -O dtb -o goodix_z2.dtbo goodix_z2.dts
