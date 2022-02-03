@@ -9,7 +9,7 @@ Environment=JACK_NO_AUDIO_RESERVATION=1
 LimitRTPRIO=infinity
 LimitMEMLOCK=infinity
 #ExecStart=/usr/local/bin/jackd -P 70 -t 2000 -s -d alsa -C plughw:Dummy -P plughw:Headphones -r 44100 -p 1024 -n 3 -X raw
-ExecStart=/usr/local/bin/jackd -P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p 256 -n 2 -X raw
+ExecStart=/usr/local/bin/jackd -P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p 1024 -n 3 -X raw
 Restart=always
 RestartSec=1
 
