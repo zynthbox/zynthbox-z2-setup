@@ -2,6 +2,7 @@
 
 cp -f config.txt /boot
 cp -f zynthian_envars.sh /zynthian/config
+cp -f zynthian.sh /zynthian/zynthian-ui
 cp -f jack2.service /etc/systemd/system
 
 cd "Z2 Display"

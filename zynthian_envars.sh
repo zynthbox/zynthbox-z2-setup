@@ -328,3 +328,6 @@ export RASPI=true
 
 # Setup / Build Options
 export ZYNTHIAN_SETUP_APT_CLEAN="TRUE" # Set TRUE to clean /var/cache/apt during build, FALSE to leave alone
+
+
+export XRANDR_ROTATE="inverted"
