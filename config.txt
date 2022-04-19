@@ -118,3 +118,4 @@ dtoverlay=goodix_z2
 # Adjust UART clock for MIDI Baudrate (31250)
 dtoverlay=midi-uart0
 
+initramfs initramfs.img
