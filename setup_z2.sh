@@ -2,8 +2,10 @@
 
 cp -f config.txt /boot
 cp -f zynthian_envars.sh /zynthian/config
-#cp -f zynthian.sh /zynthian/zynthian-ui
 cp -f jack2.service /etc/systemd/system
+cp -f initramfs.img /boot
+cp -f splash.txt /boot
+cp -f zynthian-splash.png /boot
 
 cd "Z2 Display"
 cp -f calibration.conf /etc/X11/xorg.conf.d
