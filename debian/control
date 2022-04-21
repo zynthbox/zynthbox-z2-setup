@@ -1,0 +1,12 @@
+Source: zynthbox-z2-setup
+Section: misc
+Priority: optional
+Maintainer: Anupam Basak <anupam.basak27@gmail.com>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.3
+
+Package: zynthbox-z2-setup
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, mplayer
+Description: Zynthbox Z2 Setup
+ Configurations for Zynthbox Z2

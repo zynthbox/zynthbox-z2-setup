@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+bash /usr/share/zynthbox-z2-setup/setup_z2.sh
+
+#DEBHELPER#
