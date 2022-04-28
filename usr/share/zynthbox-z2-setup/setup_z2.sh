@@ -8,8 +8,7 @@ cp -f $SCRIPTPATH/config.txt /boot
 cp -f $SCRIPTPATH/zynthian_envars.sh /zynthian/config
 cp -f $SCRIPTPATH/jack2.service /etc/systemd/system
 cp -f $SCRIPTPATH/initramfs.img /boot
-cp -f $SCRIPTPATH/splash.txt /boot
-cp -f $SCRIPTPATH/zynthian-splash.png /boot
+cp -f $SCRIPTPATH/preboot-splash.jpg /boot
 
 cp -f $SCRIPTPATH/"Z2 Display"/calibration.conf /etc/X11/xorg.conf.d
 cp -fr $SCRIPTPATH/"Z2 Display"/boot/overlays/* /boot/overlays
