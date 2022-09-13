@@ -27,7 +27,7 @@ export ZYNTHIAN_KIT_VERSION="Z2_V2"
 export SOUNDCARD_NAME="ZynADAC"
 export SOUNDCARD_CONFIG="dtoverlay=hifiberry-dacplusadcpro"
 export SOUNDCARD_MIXER="Digital Left,ADC Left,Digital Right,ADC Right,ADC Left Input,ADC Right Input"
-export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p 256 -n 2 -X raw"
+export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p 512 -n 1 -X raw"
 
 #Display Config
 export DISPLAY_NAME="Z2 Display"
