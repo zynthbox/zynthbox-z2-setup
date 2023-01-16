@@ -21,13 +21,13 @@
 # For a full copy of the GNU General Public License see the LICENSE.txt file.
 # ****************************************************************************
 
-export ZYNTHIAN_KIT_VERSION="Z2_V2"
+export ZYNTHIAN_KIT_VERSION="Z2_V3"
 
 #Audio Config
 export SOUNDCARD_NAME="ZynADAC"
 export SOUNDCARD_CONFIG="dtoverlay=hifiberry-dacplusadcpro"
 export SOUNDCARD_MIXER="Digital Left,ADC Left,Digital Right,ADC Right,ADC Left Input,ADC Right Input"
-export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -r 44100 -p 1024 -n 1 -X raw"
+export JACKD_OPTIONS="-P 70 -t 2000 -s -d alsa -d hw:sndrpihifiberry -S -r 44100 -p 1024 -n 1 -X raw"
 
 #Display Config
 export DISPLAY_NAME="Z2 Display"
@@ -37,7 +37,7 @@ export DISPLAY_HEIGHT="600"
 export FRAMEBUFFER="/dev/fb0"
 
 # Zynthian Wiring Config
-export ZYNTHIAN_WIRING_LAYOUT="Z2_V2"
+export ZYNTHIAN_WIRING_LAYOUT="Z2_V3"
 export ZYNTHIAN_WIRING_ENCODER_A=""
 export ZYNTHIAN_WIRING_ENCODER_B=""
 export ZYNTHIAN_WIRING_SWITCHES=""
@@ -278,6 +278,11 @@ export ZYNTHIAN_UI_SHOW_CPU_STATUS="0"
 export ZYNTHIAN_VNCSERVER_ENABLED="0"
 export ZYNTHIAN_UI_ONSCREEN_BUTTONS="0"
 export ZYNTHIAN_RBPI_HEADPHONES="0"
+export ZYNTHIAN_WIRING_ZYNAPTIK_CONFIG=""
+export ZYNTHIAN_WIRING_MCP23017_INTB_PIN=""
+export ZYNTHIAN_WIRING_MCP23017_INTA_PIN=""
+export ZYNTHIAN_WIRING_LAYOUT_CUSTOM_PROFILE="z2_v2"
+export ZYNTHIAN_WIRING_ZYNTOF_CONFIG=""
 
 # Directory Paths
 export ZYNTHIAN_DIR="/zynthian"
