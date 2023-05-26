@@ -11,15 +11,10 @@ cp -f $SCRIPTPATH/preboot-splash.jpg /boot
 cp -f $SCRIPTPATH/zynthbox-bootsplash-extro.mp4 /usr/share/zynthbox-bootsplash
 
 cp -f $SCRIPTPATH/"Z2 Display"/calibration.conf /etc/X11/xorg.conf.d
-cp -fr $SCRIPTPATH/"Z2 Display"/boot/overlays/* /boot/overlays
 
+# dtc -I dts -O dtb -o goodix_z2.dtbo goodix_z2.dts
 (
-    cd /boot/overlays
-    dtc -I dts -O dtb -o goodix_z2.dtbo goodix_z2.dts
-)
-
-(
-    if [ -d /boot/5.15.65-llat-v7l+ ]; then
-        cp -fr /boot/overlays/goodix_z2.dtbo /boot/5.15.65-llat-v7l+/overlays
-    fi
+    for overlay_dir in $(find /boot -name overlays); do
+        cp -fr $SCRIPTPATH/"Z2 Display"/boot/overlays/goodix_z2.dtbo $overlay_dir
+    done
 )
